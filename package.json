@@ -1,0 +1,66 @@
+{
+  "name": "@emsenn/occupation-entropy-readout",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Serves the Boltzmann occupation-entropy readout of an occupation list as a signed A2A face.",
+  "keywords": [
+    "a2a",
+    "occupation-entropy",
+    "micro-enterprise",
+    "lenticule-science"
+  ],
+  "x-agentic-metro-enterprise": {
+    "node-id": "occupation-entropy-readout",
+    "actor": "urn:ame:occupation-entropy-readout",
+    "organizational-kind": "micro-enterprise",
+    "owners": [
+      "obsmetrological-services-section"
+    ],
+    "service-level": "union",
+    "admission": "an A2A RMN Mark request naming an admissible occupation list — a non-empty array of non-negative safe-integer occupation counts",
+    "refusal": "invalid input, source drift, cross-settlement mutation, an unqualified equivalence claim, or unsettled pricing authority",
+    "implemented-operations": [
+      "attest-mathematical-source-bytes",
+      "compute-boltzmann-occupation-entropy",
+      "serve-signed-a2a",
+      "measure-local-resource-use",
+      "declare-resource-vector-price-terms"
+    ],
+    "unimplemented-operations": [
+      "formally-verified-Lean-extraction",
+      "serve-activitystreams-contract-over-stdio",
+      "issue-provider-local-rwil-receipt-and-causal-evidence",
+      "ActivityPub-federation",
+      "x402-settlement",
+      "public-network-deployment"
+    ],
+    "operation-catalog": {
+      "obsmetrologia.boltzmann.occupationEntropy": {
+        "transport": "a2a-1.0-rmn-cbor",
+        "accepts": "{ occupation: number[] } — a non-empty array of non-negative safe integers",
+        "returns": "{ cells, totalObjects, configH, entropyBits, cost, certificate }"
+      }
+    }
+  },
+  "main": "src/occupation-entropy.mjs",
+  "scripts": {
+    "start": "node bin/serve-a2a.mjs",
+    "serve:a2a": "node bin/serve-a2a.mjs",
+    "test": "node --test test/*.test.mjs",
+    "verify": "node --check src/occupation-entropy.mjs && node --check bin/serve-a2a.mjs && node --check bin/execute-a2a-task.mjs && node --test test/*.test.mjs"
+  },
+  "bin": {
+    "serve-occupation-entropy-a2a": "./bin/serve-a2a.mjs",
+    "execute-occupation-entropy-a2a-task": "./bin/execute-a2a-task.mjs"
+  },
+  "dependencies": {
+    "@a2a-js/sdk": "1.0.0-beta.0",
+    "@emsenn/a2a-agent-card-key-service": "file:../../../../../red-cup-engineering/services/web-services-section/services/a2a-services-section/services/a2a-agent-card-key-service",
+    "@emsenn/a2a-contracted-agent-service": "file:../../../../../red-cup-engineering/services/web-services-section/services/a2a-services-section/services/a2a-contracted-agent-service",
+    "@emsenn/a2a-rmn-part-service": "file:../../../../../red-cup-engineering/services/web-services-section/services/a2a-services-section/services/a2a-rmn-part-service",
+    "@emsenn/http-server": "file:../../../../../red-cup-engineering/services/web-services-section/services/http-server",
+    "@emsenn/rmn-semantic-conformance": "file:../rmn-semantic-conformance"
+  },
+  "license": "UNLICENSED"
+}
