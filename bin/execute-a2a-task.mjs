@@ -5,8 +5,8 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { Message, Role } from "@a2a-js/sdk";
-import { extractRmnPart, rmnPart } from "@emsenn/a2a-rmn-part-service";
-import { decodeSemantic, semanticBytes } from "@emsenn/rmn-semantic-conformance";
+import { extractRmnPart, rmnPart } from "@red-cup-engineering/a2a-rmn-part-service";
+import { decodeSemantic, semanticBytes } from "@red-cup-engineering/rmn-semantic-conformance";
 import { attestMathematicalSources, computeOccupationEntropy } from "../src/occupation-entropy.mjs";
 
 // The die's A2A request/response shape is one RMN Mark term whose label is a

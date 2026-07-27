@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
-import { userRmnMessage } from "@emsenn/a2a-rmn-part-service";
-import { semanticBytes, decodeSemantic } from "@emsenn/rmn-semantic-conformance";
+import { userRmnMessage } from "@red-cup-engineering/a2a-rmn-part-service";
+import { semanticBytes, decodeSemantic } from "@red-cup-engineering/rmn-semantic-conformance";
 import { attestMathematicalSources, computeOccupationEntropy } from "../src/occupation-entropy.mjs";
 import { executeA2aMessage } from "../bin/execute-a2a-task.mjs";
 
@@ -74,7 +74,7 @@ test("A2A executor: occupationEntropy happy path round-trip", async () => {
   const result = JSON.parse(term[1]);
   assert.equal(result.entropyBits, 1);
   assert.equal(result.cost.denomination, "occupation-entropy-readout-cpu-seconds");
-  assert.equal(result.certificate.library, "@emsenn/obsmetrologia");
+  assert.equal(result.certificate.library, "@lenticule-science/obsmetrologia");
 });
 
 test("A2A executor: a malformed occupation is refused, not completed", async () => {

@@ -1,5 +1,5 @@
 {
-  "name": "@emsenn/occupation-entropy-readout",
+  "name": "@lenticule-science/occupation-entropy-readout",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -56,11 +56,32 @@
   },
   "dependencies": {
     "@a2a-js/sdk": "1.0.0-beta.0",
-    "@emsenn/a2a-agent-card-key-service": "file:../../../../../red-cup-engineering/services/web-services-section/services/a2a-services-section/services/a2a-agent-card-key-service",
-    "@emsenn/a2a-contracted-agent-service": "file:../../../../../red-cup-engineering/services/web-services-section/services/a2a-services-section/services/a2a-contracted-agent-service",
-    "@emsenn/a2a-rmn-part-service": "file:../../../../../red-cup-engineering/services/web-services-section/services/a2a-services-section/services/a2a-rmn-part-service",
-    "@emsenn/http-server": "file:../../../../../red-cup-engineering/services/web-services-section/services/http-server",
-    "@emsenn/rmn-semantic-conformance": "file:../../../../../red-cup-engineering/services/model-services-section/services/relational-model-services-section/services/relational-model-notation-services-section/services/rmn-conformance-service"
+    "@red-cup-engineering/a2a-agent-card-key-service": "1.0.0",
+    "@red-cup-engineering/a2a-contracted-agent-service": "2.0.0",
+    "@red-cup-engineering/a2a-rmn-part-service": "1.0.0",
+    "@red-cup-engineering/http-server": "0.0.0",
+    "@red-cup-engineering/rmn-semantic-conformance": "6.0.0"
   },
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "x-semiotic-voxel": {
+    "profile": "org.harmonious-union.semiotic-voxel.v1",
+    "owner": "lenticule-science",
+    "kind": "actor",
+    "actor": "urn:ame:occupation-entropy-readout",
+    "operations": [
+      "obsmetrologia.boltzmann.occupationEntropy"
+    ],
+    "capabilities": [
+      {
+        "capability": "occupation-entropy-readout",
+        "faces": [
+          "obsmetrologia.boltzmann.occupationEntropy"
+        ]
+      }
+    ],
+    "package": "@lenticule-science/occupation-entropy-readout"
+  },
+  "exports": {
+    "./src/occupation-entropy.mjs": "./src/occupation-entropy.mjs"
+  }
 }
