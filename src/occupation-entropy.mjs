@@ -11,7 +11,7 @@ import { readFileSync } from "node:fs";
 const SOURCES = [
   {
     declarationFile: "Obsmetrologia/Thermodynamics/BoltzmannEntropy.lean",
-    url: new URL("../../../src/services/obsmetrologia/Obsmetrologia/Thermodynamics/BoltzmannEntropy.lean", import.meta.url),
+    url: new URL("../../../lib/obsmetrologia/Obsmetrologia/Thermodynamics/BoltzmannEntropy.lean", import.meta.url),
     sha256: "0c93b0daa706c83c2fa62d1023594a159d39f84f689e2edb1c37255f20a8e0e5",
   },
 ];
