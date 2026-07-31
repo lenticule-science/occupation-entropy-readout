@@ -10,39 +10,6 @@
     "micro-enterprise",
     "lenticule-science"
   ],
-  "x-agentic-metro-enterprise": {
-    "node-id": "occupation-entropy-readout",
-    "actor": "urn:ame:occupation-entropy-readout",
-    "organizational-kind": "micro-enterprise",
-    "owners": [
-      "obsmetrological-services-section"
-    ],
-    "service-level": "union",
-    "admission": "an A2A RMN Mark request naming an admissible occupation list — a non-empty array of non-negative safe-integer occupation counts",
-    "refusal": "invalid input, source drift, cross-settlement mutation, an unqualified equivalence claim, or unsettled pricing authority",
-    "implemented-operations": [
-      "attest-mathematical-source-bytes",
-      "compute-boltzmann-occupation-entropy",
-      "serve-signed-a2a",
-      "measure-local-resource-use",
-      "declare-resource-vector-price-terms"
-    ],
-    "unimplemented-operations": [
-      "formally-verified-Lean-extraction",
-      "serve-activitystreams-contract-over-stdio",
-      "issue-provider-local-rwil-receipt-and-causal-evidence",
-      "ActivityPub-federation",
-      "x402-settlement",
-      "public-network-deployment"
-    ],
-    "operation-catalog": {
-      "obsmetrologia.boltzmann.occupationEntropy": {
-        "transport": "a2a-1.0-rmn-cbor",
-        "accepts": "{ occupation: number[] } — a non-empty array of non-negative safe integers",
-        "returns": "{ cells, totalObjects, configH, entropyBits, cost, certificate }"
-      }
-    }
-  },
   "main": "src/occupation-entropy.mjs",
   "scripts": {
     "start": "node bin/serve-a2a.mjs",
@@ -59,28 +26,10 @@
     "@red-cup-engineering/a2a-agent-card-key-service": "1.0.0",
     "@red-cup-engineering/a2a-contracted-agent-service": "2.0.4",
     "@red-cup-engineering/a2a-rmn-part-service": "1.0.0",
-    "@red-cup-engineering/http-server": "0.0.0",
-    "@red-cup-engineering/rmn-semantic-conformance": "6.0.0"
+    "@red-cup-engineering/http-server": "0.0.2",
+    "@red-cup-engineering/rmn-semantic-conformance": "6.0.1"
   },
   "license": "UNLICENSED",
-  "x-semiotic-voxel": {
-    "profile": "org.harmonious-union.semiotic-voxel.v1",
-    "owner": "lenticule-science",
-    "kind": "actor",
-    "actor": "urn:ame:occupation-entropy-readout",
-    "operations": [
-      "obsmetrologia.boltzmann.occupationEntropy"
-    ],
-    "capabilities": [
-      {
-        "capability": "occupation-entropy-readout",
-        "faces": [
-          "obsmetrologia.boltzmann.occupationEntropy"
-        ]
-      }
-    ],
-    "package": "@lenticule-science/occupation-entropy-readout"
-  },
   "exports": {
     "./src/occupation-entropy.mjs": "./src/occupation-entropy.mjs"
   }
