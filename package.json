@@ -1,6 +1,6 @@
 {
   "name": "@lenticule-science/occupation-entropy-readout",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "Serves the Boltzmann occupation-entropy readout of an occupation list as a signed A2A face.",
@@ -12,22 +12,22 @@
   ],
   "main": "src/occupation-entropy.mjs",
   "scripts": {
-    "start": "node bin/serve-a2a.mjs",
-    "serve:a2a": "node bin/serve-a2a.mjs",
+    "start": "node scripts/serve-a2a.mjs",
+    "serve:a2a": "node scripts/serve-a2a.mjs",
     "test": "node --test test/*.test.mjs",
-    "verify": "node --check src/occupation-entropy.mjs && node --check bin/serve-a2a.mjs && node --check bin/execute-a2a-task.mjs && node --test test/*.test.mjs"
+    "verify": "node --check src/occupation-entropy.mjs && node --check scripts/serve-a2a.mjs && node --check scripts/execute-a2a-task.mjs && node --test test/*.test.mjs"
   },
   "bin": {
-    "serve-occupation-entropy-a2a": "./bin/serve-a2a.mjs",
-    "execute-occupation-entropy-a2a-task": "./bin/execute-a2a-task.mjs"
+    "serve-occupation-entropy-a2a": "./scripts/serve-a2a.mjs",
+    "execute-occupation-entropy-a2a-task": "./scripts/execute-a2a-task.mjs"
   },
   "dependencies": {
     "@a2a-js/sdk": "1.0.0-beta.0",
-    "@red-cup-engineering/a2a-agent-card-key-service": "1.0.0",
-    "@red-cup-engineering/a2a-contracted-agent-service": "2.0.4",
-    "@red-cup-engineering/a2a-rmn-part-service": "1.0.0",
+    "@red-cup-engineering/a2a-agent-card-key-service": "1.0.1",
+    "@red-cup-engineering/a2a-contracted-agent-service": "2.0.5",
+    "@red-cup-engineering/a2a-rmn-part-service": "1.0.1",
     "@red-cup-engineering/http-server": "0.0.2",
-    "@red-cup-engineering/rmn-semantic-conformance": "6.0.1"
+    "@red-cup-engineering/rmn-semantic-conformance": "6.0.2"
   },
   "license": "UNLICENSED",
   "exports": {
