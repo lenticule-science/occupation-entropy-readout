@@ -4,7 +4,7 @@ import { test } from "node:test";
 import { userRmnMessage } from "@red-cup-engineering/a2a-rmn-part-service";
 import { semanticBytes, decodeSemantic } from "@red-cup-engineering/rmn-semantic-conformance";
 import { attestMathematicalSources, computeOccupationEntropy } from "../src/occupation-entropy.mjs";
-import { executeA2aMessage } from "../bin/execute-a2a-task.mjs";
+import { executeA2aMessage } from "../scripts/execute-a2a-task.mjs";
 
 test("admitted mathematical source bytes still match", () => {
   const attestation = attestMathematicalSources();
