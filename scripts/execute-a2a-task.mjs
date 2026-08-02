@@ -6,7 +6,7 @@ import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { Message, Role } from "@a2a-js/sdk";
 import { extractRmnPart, rmnPart } from "@red-cup-engineering/a2a-rmn-part-service";
-import { decodeSemantic, semanticBytes } from "@red-cup-engineering/rmn-semantic-conformance";
+import { decodeSemantic, semanticBytes } from "@red-cup-engineering/relation-model-notation-runtime";
 import { attestMathematicalSources, computeOccupationEntropy } from "../src/occupation-entropy.mjs";
 
 // The die's A2A request/response shape is one RMN Mark term whose label is a

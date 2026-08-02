@@ -2,7 +2,7 @@
 // occupation-entropy.mjs — the die's pure computation, specified by
 // Obsmetrologia/Thermodynamics/BoltzmannEntropy.lean and pinned to its exact
 // source bytes. Served exclusively over the signed A2A face
-// (bin/serve-a2a.mjs + bin/execute-a2a-task.mjs); consumers that must not
+// (scripts/serve-a2a.mjs + scripts/execute-a2a-task.mjs); consumers that must not
 // block on transport import these functions directly as their fallback.
 
 import { createHash } from "node:crypto";
