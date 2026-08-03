@@ -2,7 +2,10 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 
 import { userRmnMessage } from "@red-cup-engineering/a2a-rmn-part-service";
-import { semanticBytes, decodeSemantic } from "@red-cup-engineering/relation-model-notation-runtime";
+import {
+  decodeNormalizedCarrier as decodeSemantic,
+  normalizedCarrierBytes as semanticBytes,
+} from "@red-cup-engineering/relation-model-notation-cbor-codec";
 import { attestMathematicalSources, computeOccupationEntropy } from "../src/occupation-entropy.mjs";
 import { executeA2aMessage } from "../scripts/execute-a2a-task.mjs";
 

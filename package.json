@@ -1,6 +1,6 @@
 {
   "name": "@lenticule-science/occupation-entropy-readout",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "Serves the Boltzmann occupation-entropy readout of an occupation list as a signed A2A face.",
@@ -23,11 +23,9 @@
   },
   "dependencies": {
     "@a2a-js/sdk": "1.0.0-beta.0",
-    "@red-cup-engineering/a2a-agent-card-key-service": "1.0.1",
-    "@red-cup-engineering/a2a-contracted-agent-service": "2.0.5",
+    "@red-cup-engineering/a2a-contracted-agent-service": "2.0.8",
     "@red-cup-engineering/a2a-rmn-part-service": "1.0.1",
-    "@red-cup-engineering/http-server": "0.0.2",
-    "@red-cup-engineering/relation-model-notation-runtime": "7.0.0"
+    "@red-cup-engineering/relation-model-notation-cbor-codec": "0.0.1"
   },
   "license": "UNLICENSED",
   "exports": {
