@@ -31,5 +31,9 @@
   "exports": {
     "./src/occupation-entropy.mjs": "./src/occupation-entropy.mjs",
     "./occupation-entropy": "./src/occupation-entropy.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenticule-science/occupation-entropy-readout.git"
   }
 }
