@@ -27,7 +27,7 @@
     "@red-cup-engineering/a2a-rmn-part-service": "1.0.1",
     "@red-cup-engineering/relation-model-notation-cbor-codec": "0.0.1"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "exports": {
     "./src/occupation-entropy.mjs": "./src/occupation-entropy.mjs",
     "./occupation-entropy": "./src/occupation-entropy.mjs"
@@ -35,5 +35,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lenticule-science/occupation-entropy-readout.git"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
   }
 }
