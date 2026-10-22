@@ -1,1 +1,1 @@
-{"keys":[{"crv":"Ed25519","x":"pD-CGg3LEMGxA6qbrj7VY80mMTVXLRvDNZxjSTfYET4","kty":"OKP","kid":"occupation-entropy-readout-ed25519","alg":"EdDSA","use":"sig"}]}
+{"keys":[{"crv":"Ed25519","x":"3w0u7SZv1EdMwVJXxfFts6HBqcZvkCL_yPgVdCNQBg8","kty":"OKP","kid":"occupation-entropy-readout-ed25519-2026-10-21","alg":"EdDSA","use":"sig"}]}
