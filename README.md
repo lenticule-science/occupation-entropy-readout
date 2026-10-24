@@ -61,3 +61,10 @@ refusal (nonzero executor exit), not a completion.
 
 Default local port: `8812` (`PORT` environment variable); `BASE_URL` names
 the public face the agent card advertises.
+
+## Code
+
+This repository holds section data only. The executable code that used to live here moved to
+[`red-cup-engineering/occupation-entropy-readout`](https://github.com/red-cup-engineering/occupation-entropy-readout) (received 2026-10-24 from
+`lenticule-science/occupation-entropy-readout@6d98049e2968`). That engine reads this data from `SECTION_ROOT` (default: its current working directory),
+so point `SECTION_ROOT` at a checkout of this repository.
